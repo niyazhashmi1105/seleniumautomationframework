@@ -3,6 +3,10 @@ package com.selenium.enums;
 public enum ConfigProperties {
 	
 	URL,
-	BROWSER;
+	BROWSER,
+	OVERRIDEREPORTS,
+	PASSEDSTEPSCREENSHOTS,
+	FAILEDSTEPSCREENSHOTS,
+	SKIPSTEPSCREENSHOTS;
 
 }

@@ -11,17 +11,17 @@ public class OrangeHRMLoginPage extends BasePage {
 	private final By btnSubmit =  By.xpath("//button[@type='submit']");
 	
 	public OrangeHRMLoginPage enterUsername(String username) {
-		sendKeys(textboxUsername,username,WaitStrategy.PRESENCE);
+		sendKeys(textboxUsername,username,WaitStrategy.PRESENCE,"Username field");
 		return this;
 	}
 	
 	public OrangeHRMLoginPage enterPassword(String password) {
-		sendKeys(textboxPassword,password,WaitStrategy.PRESENCE);
+		sendKeys(textboxPassword,password,WaitStrategy.PRESENCE,"Password field");
 		return this;
 	}
 
 	public OrangeHRMHomePage clickSubmit() {
-		click(btnSubmit,WaitStrategy.CLICKABLE);
+		click(btnSubmit,WaitStrategy.CLICKABLE,"Submit button");
 		return new OrangeHRMHomePage();
 	}
 	

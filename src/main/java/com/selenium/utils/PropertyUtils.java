@@ -37,7 +37,7 @@ public final class PropertyUtils {
 	}
 
 
-	public static String getValue(ConfigProperties key) throws Exception {
+	public static String get(ConfigProperties key) throws Exception {
 
 
 		if(Objects.isNull(key)|| Objects.isNull(configMap.get(key.name().toLowerCase()))){

@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,7 +104,12 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.selenium.tests.OrangeHRMLoginPageTest" class="method navigator-link" hash-for-method="loginlogoutTest">loginlogoutTest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.selenium.tests.OrangeHRMLoginPageTest" class="method navigator-link" hash-for-method="loginLogoutTest(Admin, admin123)">loginLogoutTest(Admin, admin123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.selenium.tests.OrangeHRMLoginPageTest" class="method navigator-link" hash-for-method="newTest(Admin, admin123)">newTest(Admin, admin123)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -127,9 +132,22 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="loginlogoutTest">
-                  </a> <!-- loginlogoutTest -->
-                  <span class="method-name">loginlogoutTest</span>
+                  <a name="loginLogoutTest(Admin, admin123)">
+                  </a> <!-- loginLogoutTest(Admin, admin123) -->
+                  <span class="method-name">loginLogoutTest</span>
+                  <span class="parameters">(Admin, admin123)</span>
+                  <em>
+(To check whether user can successfully login and logout )                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="newTest(Admin, admin123)">
+                  </a> <!-- newTest(Admin, admin123) -->
+                  <span class="method-name">newTest</span>
+                  <span class="parameters">(Admin, admin123)</span>
+                  <em>
+(To check whether this test case executed)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -144,7 +162,11 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;1&quot; name=&quot;Test&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.selenium.listeners.Listener&quot;/&gt;
+    &lt;listener class-name=&quot;com.selenium.listeners.MethodInterceptor&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;1&quot; parallel=&quot;methods&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.selenium.tests.OrangeHRMLoginPageTest&quot;/&gt;
     &lt;/classes&gt;
@@ -186,16 +208,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'loginlogoutTest')
+data.setCell(0, 1, 'loginLogoutTest')
 data.setCell(0, 2, 'com.selenium.tests.OrangeHRMLoginPageTest')
-data.setCell(0, 3, 5924);
+data.setCell(0, 3, 5949);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'newTest')
+data.setCell(1, 2, 'com.selenium.tests.OrangeHRMLoginPageTest')
+data.setCell(1, 3, 5461);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 5 seconds</span>
+              <span class="suite-total-time">Total running time: 11 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -227,12 +253,24 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">loginlogoutTest</span>
-                <span class="method-start">9731 ms</span>
+                <span class="method-name">loginLogoutTest(Admin, admin123)</span>
+                <span class="method-start">13686 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">15659 ms</span>
+                <span class="method-start">19639 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">20014 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">newTest(Admin, admin123)</span>
+                <span class="method-start">28125 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">33593 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

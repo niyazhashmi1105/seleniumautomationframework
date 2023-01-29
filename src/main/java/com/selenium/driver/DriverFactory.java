@@ -22,7 +22,7 @@ public final class DriverFactory {
 		if(Objects.isNull(DriverManager.getDriver())) {
 			WebDriver driver = new ChromeDriver();
 			DriverManager.setDriver(driver);
-			DriverManager.getDriver().get(PropertyUtils.getValue(ConfigProperties.URL));
+			DriverManager.getDriver().get(PropertyUtils.get(ConfigProperties.URL));
 			DriverManager.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(FrameworkConstants.getImplicitWaitTime()));
 			DriverManager.getDriver().manage().window().maximize();
 		}

@@ -12,9 +12,7 @@ import com.selenium.drivermanager.DriverManager;
 
 public final class HomePageTests extends BaseTest {
 
-	private HomePageTests() {
-
-	}
+	private HomePageTests() {}
 
 
 	@Test
