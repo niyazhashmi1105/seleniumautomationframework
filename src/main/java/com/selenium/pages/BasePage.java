@@ -4,8 +4,9 @@ import java.time.Duration;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+
 import com.selenium.constants.FrameworkConstants;
-import com.selenium.drivermanager.DriverManager;
+import com.selenium.driver.DriverManager;
 import com.selenium.enums.WaitStrategy;
 import com.selenium.factories.ExplicitWaitFactory;
 import com.selenium.reports.ExtentLogger;

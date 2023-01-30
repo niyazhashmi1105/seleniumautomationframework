@@ -1,29 +1,31 @@
 package com.selenium.utils;
 
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.Objects;
 
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 import com.selenium.constants.FrameworkConstants;
+import com.selenium.exceptions.FrameworkException;
+import com.selenium.exceptions.InvalidExcelPathException;
 
 public final class ExcelUtils {
 
 	private ExcelUtils() {}
 
 	public static List<Map<String,String>> getTestDetails(String sheetName){
-		FileInputStream fis = null;
+		
 		
 		List<Map<String,String>> list = null;
 
-		try {
-			fis = new FileInputStream(FrameworkConstants.getExcelFilePath());
+		try(FileInputStream fis = new FileInputStream(FrameworkConstants.getExcelFilePath())) {
+			
 			try (XSSFWorkbook workbook = new XSSFWorkbook(fis)) {
 				XSSFSheet sheet = workbook.getSheet(sheetName);
 
@@ -45,16 +47,13 @@ public final class ExcelUtils {
 				}
 			}
 
-		}catch(IOException e) {e.printStackTrace();}
-		finally {
-			try {
-				if(Objects.nonNull(fis))		
-					fis.close();
-			}catch(IOException e) {e.printStackTrace();}
+		}catch(FileNotFoundException e) {
+			throw new InvalidExcelPathException("Excel File you are trying to read not found");
 		}
+		catch(IOException e) {
+			throw new FrameworkException("Some IO exception happended while reading excel file");
+			}
+		
 		return list;
 	}
-
-
-
 }

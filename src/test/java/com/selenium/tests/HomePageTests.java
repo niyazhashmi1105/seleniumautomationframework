@@ -1,14 +1,16 @@
 package com.selenium.tests;
 
 
+import static org.assertj.core.api.Assertions.assertThat;
+
 import java.util.List;
 
-import static org.assertj.core.api.Assertions.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
-import com.selenium.drivermanager.DriverManager;
+
+import com.selenium.driver.DriverManager;
 
 public final class HomePageTests extends BaseTest {
 

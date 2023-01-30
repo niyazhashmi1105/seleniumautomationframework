@@ -1,6 +1,6 @@
 package com.selenium.pages;
 
-import com.selenium.drivermanager.DriverManager;
+import com.selenium.driver.DriverManager;
 
 public class AmazonMobilesComputerPage extends BasePage {
 	

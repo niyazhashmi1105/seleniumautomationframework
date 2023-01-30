@@ -6,15 +6,15 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
 import com.selenium.constants.FrameworkConstants;
-import com.selenium.drivermanager.DriverManager;
+import com.selenium.driver.DriverManager;
 import com.selenium.enums.WaitStrategy;
 
 public final class ExplicitWaitFactory {
 
-	private ExplicitWaitFactory() {
-
-	}
+	private ExplicitWaitFactory() {}
+	
 	public static WebElement performExplicitWait(By by, WaitStrategy wait) {
 
 		WebElement element = null;

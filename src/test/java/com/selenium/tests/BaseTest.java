@@ -15,7 +15,7 @@ public class BaseTest {
 	
 	@SuppressWarnings("unchecked")
 	@BeforeMethod
-	public void setUp(Object[] data) throws Exception {
+	public void setUp(Object[] data){
 		Map<String,String> map = (Map<String,String>)data[0];
 		DriverFactory.initDriver(map.get("browser"));
 	}

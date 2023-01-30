@@ -19,7 +19,7 @@ public final class FrameworkConstants {
 	private static final String RUNMANAGERDATASHEET = "RUNMANAGER";
 	private static final String ITERATIONDATASHEET = "DATA";
 	
-	public static String getExtentReportFilePath() throws Exception {
+	public static String getExtentReportFilePath(){
 		
 		if(extentReportFilePath.isEmpty()) {
 			extentReportFilePath=createReportFilePath();
@@ -27,7 +27,7 @@ public final class FrameworkConstants {
 		return extentReportFilePath;
 	}
 
-	private static String createReportFilePath() throws Exception {
+	private static String createReportFilePath(){
 		if(PropertyUtils.get(ConfigProperties.OVERRIDEREPORTS).equalsIgnoreCase("yes")) {
 			return EXTENTREPORTFOLDERPATH+System.currentTimeMillis()+"/index.html";
 		}

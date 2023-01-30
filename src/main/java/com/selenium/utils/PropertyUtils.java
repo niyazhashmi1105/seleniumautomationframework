@@ -9,6 +9,7 @@ import java.util.Properties;
 
 import com.selenium.constants.FrameworkConstants;
 import com.selenium.enums.ConfigProperties;
+import com.selenium.exceptions.PropertyFileUsageException;
 
 public final class PropertyUtils {
 
@@ -21,27 +22,26 @@ public final class PropertyUtils {
 
 	static {
 
-		try {
-			FileInputStream fis = new FileInputStream(FrameworkConstants.getConfigFilePath());
+		try(FileInputStream fis = new FileInputStream(FrameworkConstants.getConfigFilePath())) {
 			prop.load(fis);
 
 			for(Map.Entry<Object, Object> entry:prop.entrySet()) {
 				configMap.put(String.valueOf(entry.getKey()), String.valueOf(entry.getValue()).trim());
 			}
-			
+
 			//prop.entrySet().forEach(entry-> configMap.put(String.valueOf(entry.getKey()), String.valueOf(entry.getValue())));
 
 		}catch(IOException e) {
 			e.printStackTrace();
+			System.exit(0);
 		}
 	}
 
-
-	public static String get(ConfigProperties key) throws Exception {
+	public static String get(ConfigProperties key){
 
 
 		if(Objects.isNull(key)|| Objects.isNull(configMap.get(key.name().toLowerCase()))){
-			throw new Exception("Property name "+key+" not found in config.properties.Please check!!");
+			throw new PropertyFileUsageException("Property name "+key+" not found in config.properties.Please check!!");
 		}
 		return configMap.get(key.name().toLowerCase());
 	}

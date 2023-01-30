@@ -8,9 +8,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.safari.SafariDriver;
-
 import com.selenium.constants.FrameworkConstants;
-import com.selenium.drivermanager.DriverManager;
 import com.selenium.enums.ConfigProperties;
 import com.selenium.utils.PropertyUtils;
 
@@ -20,7 +18,7 @@ public final class DriverFactory {
 
 	}
 
-	public static void initDriver(String browser) throws Exception {
+	public static void initDriver(String browser){
 
 		if(Objects.isNull(DriverManager.getDriver())) {
 			if(browser.equalsIgnoreCase("chrome")) {
