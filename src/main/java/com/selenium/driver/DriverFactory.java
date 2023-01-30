@@ -10,14 +10,36 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.safari.SafariDriver;
 import com.selenium.constants.FrameworkConstants;
 import com.selenium.enums.ConfigProperties;
+import com.selenium.exceptions.InvalidBrowserException;
 import com.selenium.utils.PropertyUtils;
+
+/**
+ * Driver class responsible for invoking and closing browsers.
+ * 
+ * <p>
+ * It is also responsible  for setting up the driver variable to DriverManager which 
+ * handles thread safety for the webdriver instance.
+ * 
+ *@author NIYAZ
+ * @version1.0
+ * @see DriverManager
+ * @see com.selenium.tests
+ */
+
 
 public final class DriverFactory {
 
-	private DriverFactory() {
+	/**
+	 * private constructor to avoid external instantiation
+	 */
+	private DriverFactory() {}
 
-	}
-
+	/**
+	 * 
+	 * @param browser value will be passed from BaseTest.
+	 * <p>
+	 * Values can be CHROME,EDGE,FIREFOX and SAFARI
+	 */
 	public static void initDriver(String browser){
 
 		if(Objects.isNull(DriverManager.getDriver())) {
@@ -38,7 +60,7 @@ public final class DriverFactory {
 				DriverManager.setDriver(driver);
 			}
 		else {
-			System.out.println("Please provide valid "+ browser+ " in config properties file");
+			throw new InvalidBrowserException("Please provide valid "+ browser+ " in config properties file");
 		}
 			DriverManager.getDriver().get(PropertyUtils.get(ConfigProperties.URL));
 			DriverManager.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(FrameworkConstants.getImplicitWaitTime()));
