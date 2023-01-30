@@ -8,6 +8,7 @@ import org.testng.IMethodInstance;
 import org.testng.IMethodInterceptor;
 import org.testng.ITestContext;
 
+import com.selenium.constants.FrameworkConstants;
 import com.selenium.utils.ExcelUtils;
 
 public final class MethodInterceptor implements IMethodInterceptor{
@@ -17,7 +18,7 @@ public final class MethodInterceptor implements IMethodInterceptor{
 	@Override
 	public List<IMethodInstance> intercept(List<IMethodInstance> methods, ITestContext context) {
 
-		List<Map<String,String>> list = ExcelUtils.getTestDetails();
+		List<Map<String,String>> list = ExcelUtils.getTestDetails(FrameworkConstants.getRunManagerDataSheet());
 		List<IMethodInstance> result = new ArrayList<>();
 
 		for(int i=0;i<methods.size();i++) {

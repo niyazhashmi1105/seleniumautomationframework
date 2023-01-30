@@ -1,5 +1,7 @@
 package com.selenium.tests;
 
+import java.util.Map;
+
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
@@ -11,9 +13,11 @@ public class BaseTest {
 	protected BaseTest() {}
 	
 	
+	@SuppressWarnings("unchecked")
 	@BeforeMethod
-	public void setUp() throws Exception {
-		DriverFactory.initDriver();
+	public void setUp(Object[] data) throws Exception {
+		Map<String,String> map = (Map<String,String>)data[0];
+		DriverFactory.initDriver(map.get("browser"));
 	}
 
 	@AfterMethod

@@ -3,16 +3,18 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <listeners>
     <listener class-name="com.selenium.listeners.Listener"/>
+    <listener class-name="com.selenium.listeners.MethodInterceptor"/>
+    <listener class-name="com.selenium.listeners.AnnotationTransformer"/>
   </listeners>
   <test thread-count="5" parallel="methods" name="Test(failed)">
     <classes>
-      <class name="com.selenium.tests.OrangeHRMLoginPageTest">
+      <class name="com.selenium.tests.AmazonHamburgerMenuPageTest">
         <methods>
-          <include name="loginlogoutTest" invocation-numbers="1"/>
+          <include name="amazonHamburgerMenuTest" invocation-numbers="0"/>
           <include name="tearDown"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- com.selenium.tests.OrangeHRMLoginPageTest -->
+      </class> <!-- com.selenium.tests.AmazonHamburgerMenuPageTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

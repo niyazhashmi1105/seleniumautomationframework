@@ -16,6 +16,8 @@ public final class FrameworkConstants {
 	private static final String EXTENTREPORTFOLDERPATH = System.getProperty("user.dir")+"/extent-test-output/";
 	private static String extentReportFilePath = "";
 	private static final String EXCELFILEPATH =  RESOURCEPATH+"/excel/testdata.xlsx";
+	private static final String RUNMANAGERDATASHEET = "RUNMANAGER";
+	private static final String ITERATIONDATASHEET = "DATA";
 	
 	public static String getExtentReportFilePath() throws Exception {
 		
@@ -51,5 +53,14 @@ public final class FrameworkConstants {
 		return EXPLICITWAITTIME;
 	}
 
+	public static String getRunManagerDataSheet() {
+		return RUNMANAGERDATASHEET;
+	}
+
+	public static String getIterationDataSheet() {
+		return ITERATIONDATASHEET;
+	}
+
+	
 	
 }
