@@ -6,12 +6,15 @@ import java.util.Map;
 import org.assertj.core.api.Assertions;
 import org.testng.annotations.Test;
 
+import com.selenium.annotation.FrameworkAnnotation;
+import com.selenium.enums.CategoryType;
 import com.selenium.pages.OrangeHRMLoginPage;
 
 public final class OrangeHRMLoginPageTest extends BaseTest {
 
 	private OrangeHRMLoginPageTest() {}
-
+	
+	@FrameworkAnnotation(author={"Niyaz","Hashmi"},category={CategoryType.SMOKE,CategoryType.REGRESSION})
 	@Test
 	public void loginLogoutTest(Map<String,String> data) {
 
@@ -22,6 +25,7 @@ public final class OrangeHRMLoginPageTest extends BaseTest {
 		.isEqualTo("OrangeHRM");
 	}
 	
+	@FrameworkAnnotation(author={"Niyaz","Hashmi"},category={CategoryType.SMOKE,CategoryType.REGRESSION})
 	@Test
 	public void newTest(Map<String,String> data) {
 

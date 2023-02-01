@@ -10,6 +10,7 @@ import com.selenium.enums.CategoryType;
 
 @Retention(RUNTIME)
 @Target(METHOD)
+
 public @interface FrameworkAnnotation {
 	
 	public String[] author() default{};

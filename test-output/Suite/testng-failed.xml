@@ -8,13 +8,13 @@
   </listeners>
   <test thread-count="5" parallel="methods" name="Test(failed)">
     <classes>
-      <class name="com.selenium.tests.AmazonHamburgerMenuPageTest">
+      <class name="com.selenium.tests.OrangeHRMLoginPageTest">
         <methods>
-          <include name="amazonHamburgerMenuTest"/>
           <include name="tearDown"/>
+          <include name="newTest" invocation-numbers="0"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- com.selenium.tests.AmazonHamburgerMenuPageTest -->
+      </class> <!-- com.selenium.tests.OrangeHRMLoginPageTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

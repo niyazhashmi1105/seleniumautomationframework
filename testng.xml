@@ -8,8 +8,8 @@
 </listeners>
   <test thread-count="1" name="Test" parallel="methods">
     <classes>
-    	<!--<class name="com.selenium.tests.OrangeHRMLoginPageTest"/>-->
-       <class name="com.selenium.tests.AmazonHamburgerMenuPageTest"/>
+    	<class name="com.selenium.tests.OrangeHRMLoginPageTest"/>
+       	<!--<class name="com.selenium.tests.AmazonHamburgerMenuPageTest"/>-->
     </classes>
   </test> 
 </suite> 

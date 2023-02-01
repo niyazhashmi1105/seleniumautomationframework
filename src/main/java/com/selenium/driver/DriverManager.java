@@ -1,5 +1,7 @@
 package com.selenium.driver;
 
+import java.util.Objects;
+
 import org.openqa.selenium.WebDriver;
 
 public final class DriverManager {
@@ -13,12 +15,16 @@ public final class DriverManager {
 	public static WebDriver getDriver() {
 		return dr.get();
 	}
-	public static void setDriver(WebDriver driverRef) {
-		dr.set(driverRef);
+	static void setDriver(WebDriver driverRef) {
+
+		if(Objects.nonNull(driverRef)) {
+			dr.set(driverRef);
+		}
 	}
 
-	public static void unload() {
-		dr.remove();
+	static void unload() {
+		if(Objects.isNull(dr))
+			dr.remove();
 	}
 
 }

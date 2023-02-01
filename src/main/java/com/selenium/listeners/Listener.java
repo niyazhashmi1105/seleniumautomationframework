@@ -7,9 +7,11 @@ import org.testng.ISuiteListener;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
+
 import com.selenium.annotation.FrameworkAnnotation;
 import com.selenium.reports.ExtentLogger;
 import com.selenium.reports.ExtentReport;
+import com.selenium.utils.ELKUtils;
 
 
 public class Listener implements ITestListener,ISuiteListener{
@@ -35,6 +37,7 @@ public class Listener implements ITestListener,ISuiteListener{
 	@Override
 	public void onTestSuccess(ITestResult result) {
 		ExtentLogger.pass(result.getMethod().getMethodName()+" is passed");
+		ELKUtils.sendResultstoELK(result.getMethod().getMethodName(), "pass");
 	}
 
 	@Override
@@ -42,11 +45,13 @@ public class Listener implements ITestListener,ISuiteListener{
 		ExtentLogger.fail(result.getMethod().getMethodName()+" is failed", true);
 		ExtentLogger.fail(result.getThrowable().toString());
 		ExtentLogger.fail(Arrays.toString(result.getThrowable().getStackTrace()));
+		ELKUtils.sendResultstoELK(result.getMethod().getMethodName(), "fail");
 	}
 
 	@Override
 	public void onTestSkipped(ITestResult result) {
 		ExtentLogger.skip(result.getMethod().getMethodName()+" is skipped");
+		ELKUtils.sendResultstoELK(result.getMethod().getMethodName(), "skip");
 	}
 
 	@Override

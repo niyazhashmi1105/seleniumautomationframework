@@ -1,7 +1,11 @@
+# To execute this docker-compose yml file use `docker-compose -f docker-compose-v3-beta-channel.yml up`
+# Add the `-d` flag at the end for detached execution
+# To stop the execution, hit Ctrl+C, and then `docker-compose -f docker-compose-v3-beta-channel.yml down`
+
 version: "3"
 services:
   chrome:
-    image: selenium/node-chrome:4.8.0-20230131
+    image: selenium/node-chrome:latest
     shm_size: 2gb
     depends_on:
       - selenium-hub
@@ -9,9 +13,10 @@ services:
       - SE_EVENT_BUS_HOST=selenium-hub
       - SE_EVENT_BUS_PUBLISH_PORT=4442
       - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
+    restart: on-failure:3
 
   edge:
-    image: selenium/node-edge:4.8.0-20230131
+    image: selenium/node-edge:latest
     shm_size: 2gb
     depends_on:
       - selenium-hub
@@ -19,9 +24,10 @@ services:
       - SE_EVENT_BUS_HOST=selenium-hub
       - SE_EVENT_BUS_PUBLISH_PORT=4442
       - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
+    restart: on-failure:3
   
   firefox:
-    image: selenium/node-firefox:dev
+    image: selenium/node-firefox:latest
     shm_size: 2gb
     depends_on:
       - selenium-hub
@@ -29,10 +35,12 @@ services:
       - SE_EVENT_BUS_HOST=selenium-hub
       - SE_EVENT_BUS_PUBLISH_PORT=4442
       - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
+    restart: on-failure:3
           
   selenium-hub:
-    image: selenium/hub:4.8.0-20230131
+    image: selenium/hub:latest
     container_name: selenium-hub
+    restart: always
     ports:
       - "4442:4442"
       - "4443:4443"

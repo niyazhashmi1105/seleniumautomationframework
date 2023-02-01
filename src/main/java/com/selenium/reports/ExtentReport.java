@@ -50,15 +50,19 @@ public final class ExtentReport {
 	}
 
 	public static void addAuthors(String [] authors) {
-		for(String temp:authors) {
-			ExtentReportManager.getExtentTest().assignAuthor(temp);
+		if(Objects.nonNull(authors)) {
+			for(String temp:authors) {
+				ExtentReportManager.getExtentTest().assignAuthor(temp);
+			}
 		}
 	}
 
 	public static void addCategories(CategoryType [] categories) {
-		for(CategoryType temp:categories) {
-			ExtentReportManager.getExtentTest().assignCategory(temp.toString());
-		}
 
+		if(Objects.nonNull(categories)) {
+			for(CategoryType temp:categories) {
+				ExtentReportManager.getExtentTest().assignCategory(temp.toString());
+			}
+		}
 	}
 }
