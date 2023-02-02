@@ -1,6 +1,6 @@
 package com.selenium.reports;
 
-import java.util.HashMap;
+import java.util.EnumMap;
 import java.util.Map;
 import java.util.function.Consumer;
 
@@ -17,7 +17,8 @@ public final class FrameworkLogger {
 	private static Consumer<String> CONSOLE = (message)->System.out.println("INFO------> "+message);
 	private static Consumer<String> EXTENTANDCONSOLE = PASS.andThen(CONSOLE);
 	
-	private static Map<LogType,Consumer<String>> map = new HashMap<>();
+	
+	private static Map<LogType,Consumer<String>> map = new EnumMap<>(LogType.class);
 	
 	static {
 		
