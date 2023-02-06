@@ -1,0 +1,4 @@
+com\selenium\tests\BaseTest.class
+com\selenium\tests\AmazonHamburgerMenuPageTest.class
+com\selenium\tests\HomePageTests.class
+com\selenium\tests\OrangeHRMLoginPageTest.class

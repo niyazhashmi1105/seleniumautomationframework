@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
+                    <span class="method-stats">5 methods, 1 failed,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -104,7 +104,7 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.selenium.tests.OrangeHRMLoginPageTest" class="method navigator-link" hash-for-method="newTest({password=YWRtaW4xMjM=, testcasename=newTest, browser=edge, name=, menuSubItem=, execute=yes, userna...)">newTest({password=YWRtaW4xMjM=, testcasename=newTest, browser=edge, name=, menuSubItem=, execute=yes, userna...)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.selenium.tests.OrangeHRMLoginPageTest" class="method navigator-link" hash-for-method="loginLogoutTest({password=YWRtaW4xMjM=, testcasename=loginLogoutTest, browser=edge, name=Subscribe, menuSubItem=, ex...)">loginLogoutTest({password=YWRtaW4xMjM=, testcasename=loginLogoutTest, browser=edge, name=Subscribe, menuSubItem=, ex...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
@@ -118,7 +118,22 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.selenium.tests.OrangeHRMLoginPageTest" class="method navigator-link" hash-for-method="loginLogoutTest({password=YWRtaW4xMjM=, testcasename=loginLogoutTest, browser=edge, name=SeleniumAutomation, menuSub...)">loginLogoutTest({password=YWRtaW4xMjM=, testcasename=loginLogoutTest, browser=edge, name=SeleniumAutomation, menuSub...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="com.selenium.tests.OrangeHRMLoginPageTest" class="method navigator-link" hash-for-method="loginLogoutTest({password=YWRtaW4xMjM=, testcasename=loginLogoutTest, browser=chrome, name=Niyaz, menuSubItem=, exec...)">loginLogoutTest({password=YWRtaW4xMjM=, testcasename=loginLogoutTest, browser=chrome, name=Niyaz, menuSubItem=, exec...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.selenium.tests.OrangeHRMLoginPageTest" class="method navigator-link" hash-for-method="newTest({password=YWRtaW4xMjM=, testcasename=newTest, browser=edge, name=, menuSubItem=, execute=yes, userna...)">newTest({password=YWRtaW4xMjM=, testcasename=newTest, browser=edge, name=, menuSubItem=, execute=yes, userna...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.selenium.tests.OrangeHRMLoginPageTest" class="method navigator-link" hash-for-method="newTest({password=YWRtaW4xMjM=, testcasename=newTest, browser=chrome, name=, menuSubItem=, execute=yes, user...)">newTest({password=YWRtaW4xMjM=, testcasename=newTest, browser=chrome, name=, menuSubItem=, execute=yes, user...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -141,22 +156,32 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="newTest({password=YWRtaW4xMjM=, testcasename=newTest, browser=edge, name=, menuSubItem=, execute=yes, userna...)">
-                  </a> <!-- newTest({password=YWRtaW4xMjM=, testcasename=newTest, browser=edge, name=, menuSubItem=, execute=yes, userna...) -->
-                  <span class="method-name">newTest</span>
-                  <span class="parameters">({password=YWRtaW4xMjM=, testcasename=newTest, browser=edge, name=, menuSubItem=, execute=yes, username=Admin})</span>
-                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;com.selenium.annotation.FrameworkAnnotation.author()&quot; because the return value of &quot;java.lang.reflect.Method.getAnnotation(java.lang.Class)&quot; is null
-	at com.selenium.listeners.Listener.onTestStart(Listener.java:32)
+                  <a name="loginLogoutTest({password=YWRtaW4xMjM=, testcasename=loginLogoutTest, browser=edge, name=Subscribe, menuSubItem=, ex...)">
+                  </a> <!-- loginLogoutTest({password=YWRtaW4xMjM=, testcasename=loginLogoutTest, browser=edge, name=Subscribe, menuSubItem=, ex...) -->
+                  <span class="method-name">loginLogoutTest</span>
+                  <span class="parameters">({password=YWRtaW4xMjM=, testcasename=loginLogoutTest, browser=edge, name=Subscribe, menuSubItem=, execute=yes, username=admin123})</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //p[@class=&apos;oxd-userdropdown-name&apos;] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 109.0.1518.78, ms:edgeOptions: {debuggerAddress: localhost:56211}, msedge: {msedgedriverVersion: 109.0.1518.78 (4e4b32c38163..., userDataDir: C:\Users\NIYAZ\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56211/devtoo..., se:cdpVersion: 109.0.1518.78, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 116ee66e8b91c39be86d8caa71a4cabe
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at com.selenium.factories.ExplicitWaitFactory.performExplicitWait(ExplicitWaitFactory.java:24)
+	at com.selenium.pages.BasePage.click(BasePage.java:21)
+	at com.selenium.pages.OrangeHRMHomePage.clickWelcome(OrangeHRMHomePage.java:13)
+	at com.selenium.tests.OrangeHRMLoginPageTest.loginLogoutTest(OrangeHRMLoginPageTest.java:23)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 6 stack frames
+... Removed 9 stack frames
 </div> <!-- stack-trace -->
                   <em>
-(To check whether this test case executed)                  </em>
+(To check whether user can successfully login and logout )                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -169,12 +194,42 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="loginLogoutTest({password=YWRtaW4xMjM=, testcasename=loginLogoutTest, browser=edge, name=SeleniumAutomation, menuSub...)">
+                  </a> <!-- loginLogoutTest({password=YWRtaW4xMjM=, testcasename=loginLogoutTest, browser=edge, name=SeleniumAutomation, menuSub...) -->
+                  <span class="method-name">loginLogoutTest</span>
+                  <span class="parameters">({password=YWRtaW4xMjM=, testcasename=loginLogoutTest, browser=edge, name=SeleniumAutomation, menuSubItem=, execute=yes, username=Admin})</span>
+                  <em>
+(To check whether user can successfully login and logout )                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="loginLogoutTest({password=YWRtaW4xMjM=, testcasename=loginLogoutTest, browser=chrome, name=Niyaz, menuSubItem=, exec...)">
                   </a> <!-- loginLogoutTest({password=YWRtaW4xMjM=, testcasename=loginLogoutTest, browser=chrome, name=Niyaz, menuSubItem=, exec...) -->
                   <span class="method-name">loginLogoutTest</span>
                   <span class="parameters">({password=YWRtaW4xMjM=, testcasename=loginLogoutTest, browser=chrome, name=Niyaz, menuSubItem=, execute=yes, username=Admin})</span>
                   <em>
 (To check whether user can successfully login and logout )                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="newTest({password=YWRtaW4xMjM=, testcasename=newTest, browser=edge, name=, menuSubItem=, execute=yes, userna...)">
+                  </a> <!-- newTest({password=YWRtaW4xMjM=, testcasename=newTest, browser=edge, name=, menuSubItem=, execute=yes, userna...) -->
+                  <span class="method-name">newTest</span>
+                  <span class="parameters">({password=YWRtaW4xMjM=, testcasename=newTest, browser=edge, name=, menuSubItem=, execute=yes, username=Admin})</span>
+                  <em>
+(To check whether this test case executed)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="newTest({password=YWRtaW4xMjM=, testcasename=newTest, browser=chrome, name=, menuSubItem=, execute=yes, user...)">
+                  </a> <!-- newTest({password=YWRtaW4xMjM=, testcasename=newTest, browser=chrome, name=, menuSubItem=, execute=yes, user...) -->
+                  <span class="method-name">newTest</span>
+                  <span class="parameters">({password=YWRtaW4xMjM=, testcasename=newTest, browser=chrome, name=, menuSubItem=, execute=yes, username=Admin})</span>
+                  <em>
+(To check whether this test case executed)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -236,20 +291,32 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(5);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'loginLogoutTest')
 data.setCell(0, 2, 'com.selenium.tests.OrangeHRMLoginPageTest')
-data.setCell(0, 3, 6181);
+data.setCell(0, 3, 30427);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'newTest')
+data.setCell(1, 1, 'loginLogoutTest')
 data.setCell(1, 2, 'com.selenium.tests.OrangeHRMLoginPageTest')
-data.setCell(1, 3, 12);
+data.setCell(1, 3, 17712);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'loginLogoutTest')
+data.setCell(2, 2, 'com.selenium.tests.OrangeHRMLoginPageTest')
+data.setCell(2, 3, 16677);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'newTest')
+data.setCell(3, 2, 'com.selenium.tests.OrangeHRMLoginPageTest')
+data.setCell(3, 3, 12361);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'newTest')
+data.setCell(4, 2, 'com.selenium.tests.OrangeHRMLoginPageTest')
+data.setCell(4, 3, 11080);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 6 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -280,21 +347,63 @@ return data;
                 <span class="method-name">setUp([{password=YWRtaW4xMjM=, testcasename=loginLogoutTest, browser=chrome, name=Niyaz, menuSubItem=, exe...)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp([{password=YWRtaW4xMjM=, testcasename=loginLogoutTest, browser=edge, name=SeleniumAutomation, menuSu...)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp([{password=YWRtaW4xMjM=, testcasename=loginLogoutTest, browser=edge, name=Subscribe, menuSubItem=, e...)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginLogoutTest({password=YWRtaW4xMjM=, testcasename=loginLogoutTest, browser=chrome, name=Niyaz, menuSubItem=, exec...)</span>
-                <span class="method-start">8065 ms</span>
+                <span class="method-start">20858 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginLogoutTest({password=YWRtaW4xMjM=, testcasename=loginLogoutTest, browser=edge, name=SeleniumAutomation, menuSub...)</span>
+                <span class="method-start">25804 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">loginLogoutTest({password=YWRtaW4xMjM=, testcasename=loginLogoutTest, browser=edge, name=Subscribe, menuSubItem=, ex...)</span>
+                <span class="method-start">26457 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">14254 ms</span>
+                <span class="method-start">37570 ms</span>
               </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp([{password=YWRtaW4xMjM=, testcasename=newTest, browser=edge, name=, menuSubItem=, execute=yes, usern...)</span>
-                <span class="method-start">14651 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">23866 ms</span>
+                <span class="method-start">43523 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">57121 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp([{password=YWRtaW4xMjM=, testcasename=newTest, browser=chrome, name=, menuSubItem=, execute=yes, use...)</span>
+                <span class="method-start">58547 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp([{password=YWRtaW4xMjM=, testcasename=newTest, browser=edge, name=, menuSubItem=, execute=yes, usern...)</span>
+                <span class="method-start">58553 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">newTest({password=YWRtaW4xMjM=, testcasename=newTest, browser=chrome, name=, menuSubItem=, execute=yes, user...)</span>
+                <span class="method-start">70304 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">newTest({password=YWRtaW4xMjM=, testcasename=newTest, browser=edge, name=, menuSubItem=, execute=yes, userna...)</span>
+                <span class="method-start">73485 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">82667 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">84571 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

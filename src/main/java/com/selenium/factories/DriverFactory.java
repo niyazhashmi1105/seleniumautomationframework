@@ -52,7 +52,7 @@ public final class DriverFactory {
 			if(runmode.equalsIgnoreCase("remote")) {
 				ChromeOptions chromeOpt = new ChromeOptions();
 				chromeOpt.setCapability("browserName", "chrome");
-				driver = new RemoteWebDriver(new URL(PropertyUtils.get(ConfigProperties.SELENIUMGRIDURL)), chromeOpt);
+				driver = new RemoteWebDriver(new URL(PropertyUtils.get(ConfigProperties.SELENIUMGRIDAWSURL)), chromeOpt);
 			}
 			else {
 				driver = new ChromeDriver();
@@ -63,7 +63,7 @@ public final class DriverFactory {
 			if(runmode.equalsIgnoreCase("remote")) {
 				EdgeOptions edgeOpt = new EdgeOptions();
 				edgeOpt.setCapability("browserName", "MicrosoftEdge");
-				driver = new RemoteWebDriver(new URL(PropertyUtils.get(ConfigProperties.SELENIUMGRIDURL)), edgeOpt);
+				driver = new RemoteWebDriver(new URL(PropertyUtils.get(ConfigProperties.SELENIUMGRIDAWSURL)), edgeOpt);
 			} else {
 				driver = new EdgeDriver();
 			}
@@ -73,7 +73,7 @@ public final class DriverFactory {
 			if(runmode.equalsIgnoreCase("remote")) {
 				FirefoxOptions firefoxOpt = new FirefoxOptions();
 				firefoxOpt.setCapability("browserName", "firefox");
-				driver = new RemoteWebDriver(new URL(PropertyUtils.get(ConfigProperties.SELENIUMGRIDURL)), firefoxOpt);
+				driver = new RemoteWebDriver(new URL(PropertyUtils.get(ConfigProperties.SELENIUMGRIDAWSURL)), firefoxOpt);
 			} else {
 				driver = new FirefoxDriver();
 			}
