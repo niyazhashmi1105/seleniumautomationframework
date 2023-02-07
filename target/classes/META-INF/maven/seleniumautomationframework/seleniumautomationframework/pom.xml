@@ -48,6 +48,7 @@
 				</configuration>
 			</plugin>
 		</plugins>
+		<finalName>selenium-automation</finalName>
 	</build>
 	<dependencies>
 		<dependency>
