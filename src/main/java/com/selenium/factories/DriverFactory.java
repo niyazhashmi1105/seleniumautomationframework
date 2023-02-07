@@ -47,7 +47,8 @@ public final class DriverFactory {
 
 		WebDriver driver=null;
 
-		String runmode = System.getProperty("runmode");
+		//String runmode = System.getProperty("runmode");
+		String runmode = PropertyUtils.get(ConfigProperties.RUNMODE);
 		if(browser.equalsIgnoreCase("chrome")) {
 			if(runmode.equalsIgnoreCase("remote")) {
 				ChromeOptions chromeOpt = new ChromeOptions();

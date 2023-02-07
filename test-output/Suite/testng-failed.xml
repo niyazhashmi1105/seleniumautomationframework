@@ -10,8 +10,9 @@
     <classes>
       <class name="com.selenium.tests.OrangeHRMLoginPageTest">
         <methods>
-          <include name="loginLogoutTest" invocation-numbers="2"/>
+          <include name="loginLogoutTest"/>
           <include name="tearDown"/>
+          <include name="newTest"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- com.selenium.tests.OrangeHRMLoginPageTest -->

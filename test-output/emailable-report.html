@@ -8,33 +8,15 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">88,417</td><td></td><td></td></tr>
+<tr><th colspan="8">Command line suite</th></tr>
+<tr><td><a href="#t0">Command line test</a></td><td class="num">5</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">57,663</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.selenium.tests.OrangeHRMLoginPageTest</td><td><a href="#m0">loginLogoutTest</a></td><td rowspan="1">1675658527761</td><td rowspan="1">30427</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">com.selenium.tests.OrangeHRMLoginPageTest</td><td><a href="#m1">loginLogoutTest</a></td><td rowspan="2">1675658527108</td><td rowspan="2">17712</td></tr><tr class="passedeven"><td><a href="#m2">loginLogoutTest</a></td></tr><tr class="passedeven"><td><a href="#m3">newTest</a></td><td rowspan="2">1675658574789</td><td rowspan="2">11080</td></tr><tr class="passedeven"><td><a href="#m4">newTest</a></td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Command line suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Command line test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="5">com.selenium.tests.OrangeHRMLoginPageTest</td><td><a href="#m0">loginLogoutTest</a></td><td rowspan="3">1675768331700</td><td rowspan="3">10572</td></tr><tr class="passedeven"><td><a href="#m1">loginLogoutTest</a></td></tr><tr class="passedeven"><td><a href="#m2">loginLogoutTest</a></td></tr><tr class="passedeven"><td><a href="#m3">newTest</a></td><td rowspan="2">1675768358403</td><td rowspan="2">8275</td></tr><tr class="passedeven"><td><a href="#m4">newTest</a></td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">com.selenium.tests.OrangeHRMLoginPageTest#loginLogoutTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{password=YWRtaW4xMjM=, testcasename=loginLogoutTest, browser=edge, name=Subscribe, menuSubItem=, execute=yes, username=admin123}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //p[@class=&apos;oxd-userdropdown-name&apos;] (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 109.0.1518.78, ms:edgeOptions: {debuggerAddress: localhost:56211}, msedge: {msedgedriverVersion: 109.0.1518.78 (4e4b32c38163..., userDataDir: C:\Users\NIYAZ\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56211/devtoo..., se:cdpVersion: 109.0.1518.78, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 116ee66e8b91c39be86d8caa71a4cabe
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at com.selenium.factories.ExplicitWaitFactory.performExplicitWait(ExplicitWaitFactory.java:24)
-	at com.selenium.pages.BasePage.click(BasePage.java:21)
-	at com.selenium.pages.OrangeHRMHomePage.clickWelcome(OrangeHRMHomePage.java:13)
-	at com.selenium.tests.OrangeHRMLoginPageTest.loginLogoutTest(OrangeHRMLoginPageTest.java:23)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 9 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.selenium.tests.OrangeHRMLoginPageTest#loginLogoutTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{password=YWRtaW4xMjM=, testcasename=loginLogoutTest, browser=edge, name=SeleniumAutomation, menuSubItem=, execute=yes, username=Admin}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Command line test</h2><h3 id="m0">com.selenium.tests.OrangeHRMLoginPageTest#loginLogoutTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{password=YWRtaW4xMjM=, testcasename=loginLogoutTest, browser=chrome, name=SeleniumAutomation, menuSubItem=, execute=yes, username=Admin}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.selenium.tests.OrangeHRMLoginPageTest#loginLogoutTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{password=YWRtaW4xMjM=, testcasename=loginLogoutTest, browser=chrome, name=Subscribe, menuSubItem=, execute=yes, username=Admin}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m2">com.selenium.tests.OrangeHRMLoginPageTest#loginLogoutTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{password=YWRtaW4xMjM=, testcasename=loginLogoutTest, browser=chrome, name=Niyaz, menuSubItem=, execute=yes, username=Admin}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m3">com.selenium.tests.OrangeHRMLoginPageTest#newTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{password=YWRtaW4xMjM=, testcasename=newTest, browser=edge, name=, menuSubItem=, execute=yes, username=Admin}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">com.selenium.tests.OrangeHRMLoginPageTest#newTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{password=YWRtaW4xMjM=, testcasename=newTest, browser=chrome, name=, menuSubItem=, execute=yes, username=Admin}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.selenium.tests.OrangeHRMLoginPageTest#newTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{password=YWRtaW4xMjM=, testcasename=newTest, browser=edge, name=, menuSubItem=, execute=yes, username=Admin}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

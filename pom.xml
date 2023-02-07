@@ -1,7 +1,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>selenium-automation</groupId>
-	<artifactId>selenium-automation</artifactId>
+	<groupId>SeleniumAutomationFramework</groupId>
+	<artifactId>SeleniumAutomationFramework</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>selenium-automation</name>
 
@@ -25,7 +25,7 @@
 		<maven.compiler.version>3.8.1</maven.compiler.version>
 		<maven.surefire.version>3.0.0-M5</maven.surefire.version>
 		<jdk.release.version>11</jdk.release.version>
-		<runmode>local</runmode>
+		<!--<runmode>local</runmode>-->
 	</properties>
 
 	<build>
