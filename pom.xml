@@ -3,6 +3,7 @@
 	<groupId>SeleniumAutomationFramework</groupId>
 	<artifactId>SeleniumAutomationFramework</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
 	<name>selenium-automation</name>
 
 	<properties>
@@ -31,6 +32,19 @@
 	<build>
 		<plugins>
 			<plugin>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <mainClass>com.selenium.runner.Runner</mainClass>
+                        </manifest>
+                    </archive>
+                    <descriptorRefs>
+                        <descriptorRef>jar-with-dependencies</descriptorRef>
+                    </descriptorRefs>
+                </configuration>
+            </plugin>
+			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>${maven.compiler.version}</version>
@@ -49,7 +63,6 @@
 				</configuration>
 			</plugin>
 		</plugins>
-		<finalName>selenium-automation</finalName>
 	</build>
 	<dependencies>
 		<dependency>

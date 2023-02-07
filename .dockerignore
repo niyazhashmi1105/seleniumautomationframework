@@ -1,0 +1,6 @@
+logs/
+passwords.txt
+.cache
+.git
+*.md
+**/*.class
