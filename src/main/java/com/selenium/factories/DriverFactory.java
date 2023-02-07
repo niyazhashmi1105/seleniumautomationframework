@@ -47,12 +47,12 @@ public final class DriverFactory {
 
 		WebDriver driver=null;
 
-		String runmode = PropertyUtils.get(ConfigProperties.RUNMODE);
+		String runmode = System.getProperty("runmode");
 		if(browser.equalsIgnoreCase("chrome")) {
 			if(runmode.equalsIgnoreCase("remote")) {
 				ChromeOptions chromeOpt = new ChromeOptions();
 				chromeOpt.setCapability("browserName", "chrome");
-				driver = new RemoteWebDriver(new URL(PropertyUtils.get(ConfigProperties.SELENIUMGRIDAWSURL)), chromeOpt);
+				driver = new RemoteWebDriver(new URL(PropertyUtils.get(ConfigProperties.SELENIUMGRIDURL)), chromeOpt);
 			}
 			else {
 				driver = new ChromeDriver();
