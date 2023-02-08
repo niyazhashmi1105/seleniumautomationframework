@@ -25,8 +25,8 @@ public final class Driver {
 				throw new BrowserInvocationFailedException("Please check the capabilities of browser");
 			}
 			DriverManager.getDriver().get(PropertyUtils.get(ConfigProperties.URL));
-			DriverManager.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(FrameworkConstants.getImplicitWaitTime()));
-			DriverManager.getDriver().manage().window().maximize();
+			implicitWait();
+			windowMaximize();
 		}
 	}
 		
@@ -36,6 +36,14 @@ public final class Driver {
 			DriverManager.getDriver().quit();
 			DriverManager.unload();
 		}
+	}
+	
+	private static void implicitWait() {
+		DriverManager.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(FrameworkConstants.getImplicitWaitTime()));
+	}
+	
+	private static void windowMaximize() {
+		DriverManager.getDriver().manage().window().maximize();
 	}
 		
 }

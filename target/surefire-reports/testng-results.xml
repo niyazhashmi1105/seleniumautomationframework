@@ -2,67 +2,67 @@
 <testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-02-07T17:27:02 IST" name="Suite" finished-at="2023-02-07T17:27:55 IST" duration-ms="52406">
+  <suite started-at="2023-02-08T14:34:16 IST" name="Suite" finished-at="2023-02-08T14:35:25 IST" duration-ms="68772">
     <groups>
     </groups>
-    <test started-at="2023-02-07T17:27:02 IST" name="Test" finished-at="2023-02-07T17:27:55 IST" duration-ms="52406">
+    <test started-at="2023-02-08T14:34:16 IST" name="Test" finished-at="2023-02-08T14:35:25 IST" duration-ms="68772">
       <class name="com.selenium.tests.OrangeHRMLoginPageTest">
-        <test-method is-config="true" signature="setUp([Ljava.lang.Object;)[pri:0, instance:com.selenium.tests.OrangeHRMLoginPageTest@71def8f8]" started-at="2023-02-07T17:27:04 IST" name="setUp" finished-at="2023-02-07T17:27:21 IST" duration-ms="16714" status="PASS">
+        <test-method is-config="true" signature="setUp([Ljava.lang.Object;)[pri:0, instance:com.selenium.tests.OrangeHRMLoginPageTest@73700b80]" started-at="2023-02-08T14:34:18 IST" name="setUp" finished-at="2023-02-08T14:34:56 IST" duration-ms="37685" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[Ljava.lang.Object;@40f8f5a8]]>
+                <![CDATA[[Ljava.lang.Object;@5445f5ba]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUp([Ljava.lang.Object;)[pri:0, instance:com.selenium.tests.OrangeHRMLoginPageTest@71def8f8]" started-at="2023-02-07T17:27:04 IST" name="setUp" finished-at="2023-02-07T17:27:22 IST" duration-ms="17696" status="PASS">
+        <test-method is-config="true" signature="setUp([Ljava.lang.Object;)[pri:0, instance:com.selenium.tests.OrangeHRMLoginPageTest@73700b80]" started-at="2023-02-08T14:34:18 IST" name="setUp" finished-at="2023-02-08T14:35:07 IST" duration-ms="48399" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[Ljava.lang.Object;@1ffcf674]]>
+                <![CDATA[[Ljava.lang.Object;@1431267b]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUp([Ljava.lang.Object;)[pri:0, instance:com.selenium.tests.OrangeHRMLoginPageTest@71def8f8]" started-at="2023-02-07T17:27:04 IST" name="setUp" finished-at="2023-02-07T17:27:21 IST" duration-ms="16690" status="PASS">
+        <test-method is-config="true" signature="setUp([Ljava.lang.Object;)[pri:0, instance:com.selenium.tests.OrangeHRMLoginPageTest@73700b80]" started-at="2023-02-08T14:34:18 IST" name="setUp" finished-at="2023-02-08T14:34:57 IST" duration-ms="38801" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[Ljava.lang.Object;@442f92e6]]>
+                <![CDATA[[Ljava.lang.Object;@342726f1]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginLogoutTest(java.util.Map)[pri:0, instance:com.selenium.tests.OrangeHRMLoginPageTest@71def8f8]" started-at="2023-02-07T17:27:21 IST" name="loginLogoutTest" description="To check whether user can successfully login and logout " data-provider="getData" finished-at="2023-02-07T17:27:32 IST" duration-ms="11046" status="PASS">
+        <test-method is-config="true" signature="setUp([Ljava.lang.Object;)[pri:0, instance:com.selenium.tests.OrangeHRMLoginPageTest@73700b80]" started-at="2023-02-08T14:34:18 IST" name="setUp" finished-at="2023-02-08T14:34:55 IST" duration-ms="37017" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{password=YWRtaW4xMjM=, testcasename=loginLogoutTest, browser=chrome, name=Niyaz, menuSubItem=, execute=yes, username=Admin}]]>
+                <![CDATA[[Ljava.lang.Object;@c808207]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginLogoutTest -->
-        <test-method signature="loginLogoutTest(java.util.Map)[pri:0, instance:com.selenium.tests.OrangeHRMLoginPageTest@71def8f8]" started-at="2023-02-07T17:27:21 IST" name="loginLogoutTest" description="To check whether user can successfully login and logout " data-provider="getData" finished-at="2023-02-07T17:27:31 IST" duration-ms="10380" status="PASS">
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp([Ljava.lang.Object;)[pri:0, instance:com.selenium.tests.OrangeHRMLoginPageTest@73700b80]" started-at="2023-02-08T14:34:18 IST" name="setUp" finished-at="2023-02-08T14:35:02 IST" duration-ms="43859" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{password=YWRtaW4xMjM=, testcasename=loginLogoutTest, browser=chrome, name=SeleniumAutomation, menuSubItem=, execute=yes, username=Admin}]]>
+                <![CDATA[[Ljava.lang.Object;@77134e08]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginLogoutTest -->
-        <test-method signature="loginLogoutTest(java.util.Map)[pri:0, instance:com.selenium.tests.OrangeHRMLoginPageTest@71def8f8]" started-at="2023-02-07T17:27:22 IST" name="loginLogoutTest" description="To check whether user can successfully login and logout " data-provider="getData" finished-at="2023-02-07T17:27:32 IST" duration-ms="10220" status="PASS">
+        </test-method> <!-- setUp -->
+        <test-method signature="loginLogoutTest(java.util.Map)[pri:0, instance:com.selenium.tests.OrangeHRMLoginPageTest@73700b80]" started-at="2023-02-08T14:34:55 IST" name="loginLogoutTest" description="To check whether user can successfully login and logout " data-provider="getData" finished-at="2023-02-08T14:35:21 IST" duration-ms="25473" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -73,41 +73,29 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginLogoutTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.tests.OrangeHRMLoginPageTest@71def8f8]" started-at="2023-02-07T17:27:31 IST" name="tearDown" finished-at="2023-02-07T17:27:33 IST" duration-ms="1353" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.tests.OrangeHRMLoginPageTest@71def8f8]" started-at="2023-02-07T17:27:32 IST" name="tearDown" finished-at="2023-02-07T17:27:33 IST" duration-ms="806" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.tests.OrangeHRMLoginPageTest@71def8f8]" started-at="2023-02-07T17:27:32 IST" name="tearDown" finished-at="2023-02-07T17:27:33 IST" duration-ms="715" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp([Ljava.lang.Object;)[pri:0, instance:com.selenium.tests.OrangeHRMLoginPageTest@71def8f8]" started-at="2023-02-07T17:27:33 IST" name="setUp" finished-at="2023-02-07T17:27:45 IST" duration-ms="12033" status="PASS">
+        <test-method signature="loginLogoutTest(java.util.Map)[pri:0, instance:com.selenium.tests.OrangeHRMLoginPageTest@73700b80]" started-at="2023-02-08T14:34:56 IST" name="loginLogoutTest" description="To check whether user can successfully login and logout " data-provider="getData" finished-at="2023-02-08T14:35:21 IST" duration-ms="24816" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[Ljava.lang.Object;@7d070ef5]]>
+                <![CDATA[{password=YWRtaW4xMjM=, testcasename=loginLogoutTest, browser=chrome, name=SeleniumAutomation, menuSubItem=, execute=yes, username=Admin}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUp([Ljava.lang.Object;)[pri:0, instance:com.selenium.tests.OrangeHRMLoginPageTest@71def8f8]" started-at="2023-02-07T17:27:33 IST" name="setUp" finished-at="2023-02-07T17:27:47 IST" duration-ms="14437" status="PASS">
+        </test-method> <!-- loginLogoutTest -->
+        <test-method signature="loginLogoutTest(java.util.Map)[pri:0, instance:com.selenium.tests.OrangeHRMLoginPageTest@73700b80]" started-at="2023-02-08T14:34:57 IST" name="loginLogoutTest" description="To check whether user can successfully login and logout " data-provider="getData" finished-at="2023-02-08T14:35:21 IST" duration-ms="23696" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[Ljava.lang.Object;@7a55f148]]>
+                <![CDATA[{password=YWRtaW4xMjM=, testcasename=loginLogoutTest, browser=chrome, name=Niyaz, menuSubItem=, execute=yes, username=Admin}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="newTest(java.util.Map)[pri:0, instance:com.selenium.tests.OrangeHRMLoginPageTest@71def8f8]" started-at="2023-02-07T17:27:45 IST" name="newTest" description="To check whether this test case executed" data-provider="getData" finished-at="2023-02-07T17:27:52 IST" duration-ms="7102" status="PASS">
+        </test-method> <!-- loginLogoutTest -->
+        <test-method signature="newTest(java.util.Map)[pri:0, instance:com.selenium.tests.OrangeHRMLoginPageTest@73700b80]" started-at="2023-02-08T14:35:02 IST" name="newTest" description="To check whether this test case executed" data-provider="getData" finished-at="2023-02-08T14:35:21 IST" duration-ms="18634" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -118,7 +106,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- newTest -->
-        <test-method signature="newTest(java.util.Map)[pri:0, instance:com.selenium.tests.OrangeHRMLoginPageTest@71def8f8]" started-at="2023-02-07T17:27:47 IST" name="newTest" description="To check whether this test case executed" data-provider="getData" finished-at="2023-02-07T17:27:54 IST" duration-ms="7026" status="PASS">
+        <test-method signature="newTest(java.util.Map)[pri:0, instance:com.selenium.tests.OrangeHRMLoginPageTest@73700b80]" started-at="2023-02-08T14:35:07 IST" name="newTest" description="To check whether this test case executed" data-provider="getData" finished-at="2023-02-08T14:35:23 IST" duration-ms="15906" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -129,11 +117,23 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- newTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.tests.OrangeHRMLoginPageTest@71def8f8]" started-at="2023-02-07T17:27:52 IST" name="tearDown" finished-at="2023-02-07T17:27:53 IST" duration-ms="1125" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.tests.OrangeHRMLoginPageTest@73700b80]" started-at="2023-02-08T14:35:21 IST" name="tearDown" finished-at="2023-02-08T14:35:24 IST" duration-ms="3325" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.tests.OrangeHRMLoginPageTest@71def8f8]" started-at="2023-02-07T17:27:54 IST" name="tearDown" finished-at="2023-02-07T17:27:55 IST" duration-ms="414" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.tests.OrangeHRMLoginPageTest@73700b80]" started-at="2023-02-08T14:35:21 IST" name="tearDown" finished-at="2023-02-08T14:35:25 IST" duration-ms="4284" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.tests.OrangeHRMLoginPageTest@73700b80]" started-at="2023-02-08T14:35:21 IST" name="tearDown" finished-at="2023-02-08T14:35:24 IST" duration-ms="3006" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.tests.OrangeHRMLoginPageTest@73700b80]" started-at="2023-02-08T14:35:21 IST" name="tearDown" finished-at="2023-02-08T14:35:24 IST" duration-ms="2975" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.tests.OrangeHRMLoginPageTest@73700b80]" started-at="2023-02-08T14:35:23 IST" name="tearDown" finished-at="2023-02-08T14:35:24 IST" duration-ms="1093" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

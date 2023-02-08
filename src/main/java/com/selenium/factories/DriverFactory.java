@@ -11,6 +11,8 @@ import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.safari.SafariDriver;
+import org.openqa.selenium.safari.SafariOptions;
 
 import com.selenium.driver.DriverManager;
 import com.selenium.enums.ConfigProperties;
@@ -55,9 +57,9 @@ public final class DriverFactory {
 				chromeOpt.setCapability("browserName", "chrome");
 				driver = new RemoteWebDriver(new URL(PropertyUtils.get(ConfigProperties.SELENIUMGRIDURL)), chromeOpt);
 			}
-			else {
+			else 
 				driver = new ChromeDriver();
-			}
+			
 		}
 		else if(browser.equalsIgnoreCase("edge")) {
 
@@ -65,9 +67,8 @@ public final class DriverFactory {
 				EdgeOptions edgeOpt = new EdgeOptions();
 				edgeOpt.setCapability("browserName", "MicrosoftEdge");
 				driver = new RemoteWebDriver(new URL(PropertyUtils.get(ConfigProperties.SELENIUMGRIDAWSURL)), edgeOpt);
-			} else {
+			} else 
 				driver = new EdgeDriver();
-			}
 		}
 		else if(browser.equalsIgnoreCase("firefox")) {
 
@@ -75,9 +76,17 @@ public final class DriverFactory {
 				FirefoxOptions firefoxOpt = new FirefoxOptions();
 				firefoxOpt.setCapability("browserName", "firefox");
 				driver = new RemoteWebDriver(new URL(PropertyUtils.get(ConfigProperties.SELENIUMGRIDAWSURL)), firefoxOpt);
-			} else {
+			} else 
 				driver = new FirefoxDriver();
-			}
+		}
+		else if(browser.equalsIgnoreCase("safari")) {
+
+			if(runmode.equalsIgnoreCase("remote")) {
+				SafariOptions safariOpt = new SafariOptions();
+				safariOpt.setCapability("browserName", "safari");
+				driver = new RemoteWebDriver(new URL(PropertyUtils.get(ConfigProperties.SELENIUMGRIDAWSURL)), safariOpt);
+			} else 
+				driver = new SafariDriver();
 		}
 		return driver;
 	}
