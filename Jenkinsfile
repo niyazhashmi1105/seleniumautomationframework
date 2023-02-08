@@ -14,21 +14,21 @@ pipeline{
 				stage('Selenium-Grid Set Up'){
 					steps{
 					    script{
-					        	bat 'docker-compose up --scale chrome=3 -d'
+					        	sh 'docker-compose up --scale chrome=3 -d'
 				        }
 					}
 				}
 				stage('Tests Execution'){
 					steps{
 					     script{
-							bat 'mvn clean test'
+							sh 'mvn clean test'
 					     }
 						 }
 				}
 				stage('Selenium-Grid Tear Down'){
 					steps{
 					        script{
-							bat 'docker-compose down'
+							sh 'docker-compose down'
 					        }
 						}
 				}
