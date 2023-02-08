@@ -1,21 +1,40 @@
 pipeline{
-    
     agent any
-    tools{
-        maven 'Maven'
-    }
-    stages{
-        
-        stage('build'){
-            steps{
-                    checkout scmGit(branches: [[name: '*/main']], extensions: [], 
-                    userRemoteConfigs: [[credentialsId: 'niyazhashmi1105', 
-                    url: 'https://github.com/niyazhashmi1105/seleniumautomationframework']])
-                    bat 'mvn -Dmaven.test.failure.ignore=true clean package'
+        tools{
+              maven 'Maven'
+            }
+        stages{
+                stage('git check out'){
+                    steps{
+                        checkout scmGit(branches: [[name: '*/main']], extensions: [], 
+                        userRemoteConfigs: [[url: 'https://github.com/niyazhashmi1105/seleniumautomationframework']])
+                        
+                    }
                 }
-        }
-    }
-    post{
+				stage('selenium-grid set up'){
+					steps{
+					    script{
+					        '''cd D:/eclipse-project/SeleniumAutomationFramework '''
+							bat 'docker-compose up --scale chrome=3 -d'
+				        }
+					}
+				}
+				stage('tests execution'){
+					steps{
+					     script{
+							bat 'mvn clean test'
+					     }
+						 }
+				}
+				stage('selenium-grid tear down'){
+					steps{
+					        script{
+							bat 'docker-compose down'
+					        }
+						}
+				}
+			}
+		 post{
             always{
                   
                     publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: true, reportDir: 'extent-test-output', 
@@ -23,5 +42,4 @@ pipeline{
             }
         
     }
-
-}
+}			
