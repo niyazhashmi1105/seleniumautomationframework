@@ -1,4 +1,19 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 75.177 s - in TestSuite
+Tests run: 5, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 151.873 s <<< FAILURE! - in TestSuite
+com.selenium.tests.OrangeHRMLoginPageTest.newTest[{password=YWRtaW4xMjM=, testcasename=newTest, browser=edge, name=, menuSubItem=, execute=yes, username=Admin}](1)  Time elapsed: 2.126 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.name: username (tried for 10 second(s) with 500 milliseconds interval)
+	at com.selenium.tests.OrangeHRMLoginPageTest.newTest(OrangeHRMLoginPageTest.java:33)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"*[name='username']"}
+  (Session info: MicrosoftEdge=109.0.1518.70)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [b1af6a6c8fa86eb27bb3ce4175b7fc26, findElement {using=name, value=username}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 109.0.1518.70, ms:edgeOptions: {debuggerAddress: localhost:34529}, msedge: {msedgedriverVersion: 109.0.1518.70 (f787d2c3a418..., userDataDir: /tmp/.com.microsoft.Edge.3l...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://172.23.0.4:4444/sessio..., se:cdpVersion: 109.0.1518.70, se:vnc: ws://172.23.0.4:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.23.0.4:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b1af6a6c8fa86eb27bb3ce4175b7fc26
+	at com.selenium.tests.OrangeHRMLoginPageTest.newTest(OrangeHRMLoginPageTest.java:33)
+
