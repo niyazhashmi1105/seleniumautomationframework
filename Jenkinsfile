@@ -4,14 +4,14 @@ pipeline{
               maven 'Maven'
             }
         stages{
-                stage('git check out'){
+                stage('Git Check Out'){
                     steps{
                         checkout scmGit(branches: [[name: '*/main']], extensions: [], 
                         userRemoteConfigs: [[url: 'https://github.com/niyazhashmi1105/seleniumautomationframework']])
                         
                     }
                 }
-				stage('selenium-grid set up'){
+				stage('Selenium-Grid Set Up'){
 					steps{
 					    script{
 					        '''cd D:/eclipse-project/SeleniumAutomationFramework '''
@@ -19,14 +19,14 @@ pipeline{
 				        }
 					}
 				}
-				stage('tests execution'){
+				stage('Tests Execution'){
 					steps{
 					     script{
 							bat 'mvn clean test'
 					     }
 						 }
 				}
-				stage('selenium-grid tear down'){
+				stage('Selenium-Grid Tear Down'){
 					steps{
 					        script{
 							bat 'docker-compose down'
