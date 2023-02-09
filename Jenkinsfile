@@ -14,8 +14,9 @@ pipeline{
 				stage('Selenium-Grid Set Up'){
 					steps{
 					    script{ 
+					    		sh 'docker info'
 					    		sh 'docker compose version'
-					    		sh '/usr/bin/docker-compose up -d'
+					    		sh '/usr/bin/docker compose up -d'
 				        }
 					}
 				}
@@ -29,7 +30,7 @@ pipeline{
 				stage('Selenium-Grid Tear Down'){
 					steps{
 					        script{
-								sh '/usr/bin/docker-compose down'
+								sh '/usr/bin/docker compose down'
 					        }
 						}
 				}
