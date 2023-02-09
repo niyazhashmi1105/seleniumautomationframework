@@ -14,7 +14,7 @@ pipeline{
 				stage('Selenium-Grid Set Up'){
 					steps{
 					    script{ 
-					    		sh 'docker compose up --scale chrome=3 -d'
+					    		sh 'docker compose up'
 				        }
 					}
 				}
