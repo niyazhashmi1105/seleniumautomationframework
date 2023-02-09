@@ -14,7 +14,7 @@ pipeline{
 				stage('Selenium-Grid Set Up'){
 					steps{
 					    script{ 
-					    		sh 'docker compose up'
+					    		sh '/usr/bin/docker compose up -d'
 				        }
 					}
 				}
@@ -28,7 +28,7 @@ pipeline{
 				stage('Selenium-Grid Tear Down'){
 					steps{
 					        script{
-							sh 'docker compose down'
+								sh '/usr/bin/docker compose down'
 					        }
 						}
 				}
