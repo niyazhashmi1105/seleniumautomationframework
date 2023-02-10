@@ -4,7 +4,6 @@ import java.util.Arrays;
 
 import org.testng.ISuite;
 import org.testng.ISuiteListener;
-import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
@@ -54,20 +53,4 @@ public class Listener implements ITestListener,ISuiteListener{
 		ELKUtils.sendResultstoELK(result.getMethod().getMethodName(), "skip");
 	}
 
-	@Override
-	public void onStart(ITestContext context) {
-		/*
-		 * 
-		 * This will be implemented according to the need
-		 */
-	}
-
-	@Override
-	public void onFinish(ITestContext context) {
-
-		/*
-		 * 
-		 * This will be implemented according to the need
-		 */
-	}
 }

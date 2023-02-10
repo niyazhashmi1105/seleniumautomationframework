@@ -27,7 +27,7 @@ public final class ExtentReport {
 			extent.attachReporter(spark);
 			spark.config().setTheme(Theme.STANDARD);
 			spark.config().setDocumentTitle("Automation Report");
-			spark.config().setReportName("Selenium Training");
+			spark.config().setReportName("Selenium Automation");
 		}
 	}
 

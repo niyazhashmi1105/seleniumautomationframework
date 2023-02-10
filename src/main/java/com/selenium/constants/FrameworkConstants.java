@@ -29,10 +29,10 @@ public final class FrameworkConstants {
 
 	private static String createReportFilePath(){
 		if(PropertyUtils.get(ConfigProperties.OVERRIDEREPORTS).equalsIgnoreCase("yes")) {
-			return EXTENTREPORTFOLDERPATH+System.currentTimeMillis()+"/index.html";
+			return EXTENTREPORTFOLDERPATH+"index.html";
 		}
 		else {
-			return EXTENTREPORTFOLDERPATH+"index.html";
+			return EXTENTREPORTFOLDERPATH+System.currentTimeMillis()+"/index.html";
 		}
 	}
 
