@@ -25,11 +25,13 @@ public final class PropertyUtils {
 		try(FileInputStream fis = new FileInputStream(FrameworkConstants.getConfigFilePath())) {
 			prop.load(fis);
 
-			for(Map.Entry<Object, Object> entry:prop.entrySet()) {
-				configMap.put(String.valueOf(entry.getKey()), String.valueOf(entry.getValue()).trim());
-			}
+			/*
+			 * for(Map.Entry<Object, Object> entry:prop.entrySet()) {
+			 * configMap.put(String.valueOf(entry.getKey()),
+			 * String.valueOf(entry.getValue()).trim()); }
+			 */
 
-			//prop.entrySet().forEach(entry-> configMap.put(String.valueOf(entry.getKey()), String.valueOf(entry.getValue())));
+			prop.entrySet().forEach(entry-> configMap.put(String.valueOf(entry.getKey()), String.valueOf(entry.getValue())));
 
 		}catch(IOException e) {
 			e.printStackTrace();

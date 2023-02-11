@@ -10,7 +10,7 @@ public class OrangeHRMHomePage extends BasePage {
 	private final By linkLogout = By.xpath("//li/a[text()='Logout']");
 
 	public OrangeHRMHomePage clickWelcome() {
-		click(linkWelcome,WaitStrategy.CLICKABLE,"Welcome link");
+		click(linkWelcome,WaitStrategy.HANDLESTALEELEMENT,"Welcome link");
 		return this;
 	}
 

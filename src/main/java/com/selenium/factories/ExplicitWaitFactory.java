@@ -14,7 +14,7 @@ import com.selenium.enums.WaitStrategy;
 public final class ExplicitWaitFactory {
 
 	private ExplicitWaitFactory() {}
-	
+
 	public static WebElement performExplicitWait(By by, WaitStrategy wait) {
 
 		WebElement element = null;
@@ -31,9 +31,19 @@ public final class ExplicitWaitFactory {
 			element = new WebDriverWait(DriverManager.getDriver(),Duration.ofSeconds(FrameworkConstants.getExplicitWaitTime()))
 					.until(ExpectedConditions.visibilityOfElementLocated(by));
 		}
-		else {
+		else if(wait== WaitStrategy.HANDLESTALEELEMENT){
+			element = new WebDriverWait(DriverManager.getDriver(),Duration.ofSeconds(FrameworkConstants.getExplicitWaitTime()))
+					.until(d->{
+								System.out.println("Searching to find the element");
+								d.navigate().refresh();
+								return d.findElement(by);
+					});
+		}
+		else if(wait== WaitStrategy.NONE){
 			element = DriverManager.getDriver().findElement(by);
 		}
+
+
 		return element;
 
 	}

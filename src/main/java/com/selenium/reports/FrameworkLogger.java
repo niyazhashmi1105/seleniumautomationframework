@@ -6,7 +6,7 @@ import java.util.function.Consumer;
 
 import com.selenium.enums.LogType;
 
-public final class FrameworkLogger {
+public class FrameworkLogger {
 	
 	private FrameworkLogger() {};
 	
