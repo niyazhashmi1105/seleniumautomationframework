@@ -15,25 +15,15 @@ public final class LocatorFactory {
 	
 	private static Map<LocatorType,Function<String,By>> map = new EnumMap<>(LocatorType.class);
 	
-	
-	private static Function<String,By> xpath = By::xpath;
-	private static Function<String,By> id = By::id;
-	private static Function<String,By> name = By::name;
-	private static Function<String,By> className = By::className;
-	private static Function<String,By> linkText = By::linkText;
-	private static Function<String,By> partialLinkedText = By::partialLinkText;
-	private static Function<String,By> cssSelector = By::cssSelector;
-	private static Function<String,By> tagName = By::tagName;
-	
 	static {
-			map.put(LocatorType.XPATH, xpath);
-			map.put(LocatorType.ID, id);
-			map.put(LocatorType.NAME, name);
-			map.put(LocatorType.CLASSNAME, className);
-			map.put(LocatorType.LINKTEXT, linkText);
-			map.put(LocatorType.PARTIALLINKTEXT, partialLinkedText);
-			map.put(LocatorType.CSSSELECTOR, cssSelector);
-			map.put(LocatorType.TAGNAME, tagName);
+			map.put(LocatorType.XPATH, By::xpath);
+			map.put(LocatorType.ID, By::id);
+			map.put(LocatorType.NAME, By::name);
+			map.put(LocatorType.CLASSNAME,  By::className);
+			map.put(LocatorType.LINKTEXT, By::linkText);
+			map.put(LocatorType.PARTIALLINKTEXT, By::partialLinkText);
+			map.put(LocatorType.CSSSELECTOR, By::cssSelector);
+			map.put(LocatorType.TAGNAME, By::tagName);
 		}
 	
 	
