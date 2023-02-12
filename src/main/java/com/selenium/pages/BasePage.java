@@ -16,14 +16,15 @@ import com.selenium.factories.ExplicitWaitFactory;
 public class BasePage {
 
 
-	protected void click(By by, WaitStrategy wait, String elementName) {
-
+	protected void click(By by,WaitStrategy wait, String elementName) {
+		
 		WebElement element = ExplicitWaitFactory.performExplicitWait(by,wait);
 		element.click();
 		log(LogType.EXTENTANDCONSOLE, elementName+" is clicked successfully");
 	}
 
-	protected void sendKeys(By by, String value,WaitStrategy wait, String elementName) {
+	protected void sendKeys(By by, String value ,WaitStrategy wait,String elementName) {
+		
 		WebElement element = ExplicitWaitFactory.performExplicitWait(by,wait);
 		element.sendKeys(value);
 		log(LogType.EXTENTANDCONSOLE, value+" is entered successfully on "+elementName);
@@ -34,7 +35,11 @@ public class BasePage {
 		return DriverManager.getDriver().getTitle();
 	}
 
-	protected void implicitlyWait() {
+	public static void implicitlyWait() {
 		DriverManager.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(FrameworkConstants.getImplicitWaitTime()));
+	}
+	
+	public static void windowMaximize() {
+		DriverManager.getDriver().manage().window().maximize();
 	}
 }

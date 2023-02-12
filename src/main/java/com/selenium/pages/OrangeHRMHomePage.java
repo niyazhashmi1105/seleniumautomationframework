@@ -2,19 +2,22 @@ package com.selenium.pages;
 
 import org.openqa.selenium.By;
 
+import com.selenium.enums.LocatorType;
 import com.selenium.enums.WaitStrategy;
+import com.selenium.factories.LocatorFactory;
 
 public class OrangeHRMHomePage extends BasePage {
 
-	private final By linkWelcome = By.xpath("//p[@class='oxd-userdropdown-name']");
-	private final By linkLogout = By.xpath("//li/a[text()='Logout']");
-
 	public OrangeHRMHomePage clickWelcome() {
-		click(linkWelcome,WaitStrategy.HANDLESTALEELEMENT,"Welcome link");
+		
+		By linkWelcome = LocatorFactory.getByLocator(LocatorType.XPATH, "//p[@class='oxd-userdropdown-name']");
+		click(linkWelcome,WaitStrategy.CLICKABLE,"Welcome link");
 		return this;
 	}
 
 	public OrangeHRMLoginPage clickLogout() {
+		
+		By linkLogout = LocatorFactory.getByLocator(LocatorType.XPATH, "//li/a[text()='Logout']");
 		click(linkLogout,WaitStrategy.CLICKABLE,"Logout link");
 		return new OrangeHRMLoginPage();
 	}

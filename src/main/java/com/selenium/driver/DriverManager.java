@@ -23,8 +23,7 @@ public final class DriverManager {
 	}
 
 	static void unload() {
-		if(Objects.isNull(dr))
-			dr.remove();
+		dr.remove();
 	}
 
 }

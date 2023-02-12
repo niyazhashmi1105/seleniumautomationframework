@@ -1,10 +1,11 @@
 package com.selenium.driver;
 
+import static com.selenium.pages.BasePage.implicitlyWait;
+import static com.selenium.pages.BasePage.windowMaximize;
+
 import java.net.MalformedURLException;
-import java.time.Duration;
 import java.util.Objects;
 
-import com.selenium.constants.FrameworkConstants;
 import com.selenium.enums.ConfigProperties;
 import com.selenium.exceptions.BrowserInvocationFailedException;
 import com.selenium.factories.DriverFactory;
@@ -25,7 +26,7 @@ public final class Driver {
 				throw new BrowserInvocationFailedException("Please check the capabilities of browser");
 			}
 			DriverManager.getDriver().get(PropertyUtils.get(ConfigProperties.URL));
-			implicitWait();
+			implicitlyWait();
 			windowMaximize();
 		}
 	}
@@ -37,13 +38,4 @@ public final class Driver {
 			DriverManager.unload();
 		}
 	}
-	
-	private static void implicitWait() {
-		DriverManager.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(FrameworkConstants.getImplicitWaitTime()));
-	}
-	
-	private static void windowMaximize() {
-		DriverManager.getDriver().manage().window().maximize();
-	}
-		
 }
