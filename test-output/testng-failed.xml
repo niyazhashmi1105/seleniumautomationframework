@@ -6,11 +6,11 @@
     <listener class-name="com.selenium.listeners.MethodInterceptor"/>
     <listener class-name="com.selenium.listeners.AnnotationTransformer"/>
   </listeners>
-  <test thread-count="5" parallel="methods" name="Test(failed)">
+  <test thread-count="5" name="Test(failed)">
     <classes>
       <class name="com.selenium.tests.AmazonHamburgerMenuPageTest">
         <methods>
-          <include name="amazonHamburgerMenuTest" invocation-numbers="0 1"/>
+          <include name="amazonHamburgerMenuTest" invocation-numbers="0 1 2 3 4"/>
           <include name="tearDown"/>
           <include name="setUp"/>
         </methods>

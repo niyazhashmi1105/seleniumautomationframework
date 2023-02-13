@@ -6,7 +6,7 @@
 <listener class-name="com.selenium.listeners.MethodInterceptor"/>
 <listener class-name="com.selenium.listeners.AnnotationTransformer"/>
 </listeners>
-  <test thread-count="3" name="Test" parallel="methods">
+  <test thread-count="1" name="Test">
     <classes>
     	<!--<class name="com.selenium.tests.OrangeHRMLoginPageTest"/>-->
        	<class name="com.selenium.tests.AmazonHamburgerMenuPageTest"/>
