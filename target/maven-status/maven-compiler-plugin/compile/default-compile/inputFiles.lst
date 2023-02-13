@@ -2,6 +2,7 @@ D:\eclipse-projects\SeleniumAutomationFramework\src\main\java\com\selenium\pages
 D:\eclipse-projects\SeleniumAutomationFramework\src\main\java\com\selenium\exceptions\InvalidPropertyFilePathException.java
 D:\eclipse-projects\SeleniumAutomationFramework\src\main\java\com\selenium\reports\ExtentReportManager.java
 D:\eclipse-projects\SeleniumAutomationFramework\src\main\java\com\selenium\utils\DynamicXpathUtils.java
+D:\eclipse-projects\SeleniumAutomationFramework\src\main\java\com\selenium\utils\PageActionUtils.java
 D:\eclipse-projects\SeleniumAutomationFramework\src\main\java\com\selenium\listeners\AnnotationTransformer.java
 D:\eclipse-projects\SeleniumAutomationFramework\src\main\java\com\selenium\utils\ELKUtils.java
 D:\eclipse-projects\SeleniumAutomationFramework\src\main\java\com\selenium\pages\AmazonMobilesComputerPage.java
@@ -18,7 +19,9 @@ D:\eclipse-projects\SeleniumAutomationFramework\src\main\java\com\selenium\drive
 D:\eclipse-projects\SeleniumAutomationFramework\src\main\java\com\selenium\utils\DataProviderUtils.java
 D:\eclipse-projects\SeleniumAutomationFramework\src\main\java\com\selenium\reports\FrameworkLogger.java
 D:\eclipse-projects\SeleniumAutomationFramework\src\main\java\com\selenium\utils\DecodeUtils.java
+D:\eclipse-projects\SeleniumAutomationFramework\src\main\java\com\selenium\factories\LocatorFactory.java
 D:\eclipse-projects\SeleniumAutomationFramework\src\main\java\com\selenium\listeners\RetryFailedTests.java
+D:\eclipse-projects\SeleniumAutomationFramework\src\main\java\com\selenium\pages\AmazonMiniTVPage.java
 D:\eclipse-projects\SeleniumAutomationFramework\src\main\java\com\selenium\reports\ExtentLogger.java
 D:\eclipse-projects\SeleniumAutomationFramework\src\main\java\com\selenium\annotation\FrameworkAnnotation.java
 D:\eclipse-projects\SeleniumAutomationFramework\src\main\java\com\selenium\enums\ConfigProperties.java
@@ -28,6 +31,7 @@ D:\eclipse-projects\SeleniumAutomationFramework\src\main\java\com\selenium\enums
 D:\eclipse-projects\SeleniumAutomationFramework\src\main\java\com\selenium\constants\FrameworkConstants.java
 D:\eclipse-projects\SeleniumAutomationFramework\src\main\java\com\selenium\listeners\MethodInterceptor.java
 D:\eclipse-projects\SeleniumAutomationFramework\src\main\java\com\selenium\pages\OrangeHRMHomePage.java
+D:\eclipse-projects\SeleniumAutomationFramework\src\main\java\com\selenium\enums\LocatorType.java
 D:\eclipse-projects\SeleniumAutomationFramework\src\main\java\com\selenium\exceptions\PropertyFileUsageException.java
 D:\eclipse-projects\SeleniumAutomationFramework\src\main\java\com\selenium\exceptions\InvalidPathFilesException.java
 D:\eclipse-projects\SeleniumAutomationFramework\src\main\java\com\selenium\exceptions\InvalidBrowserException.java

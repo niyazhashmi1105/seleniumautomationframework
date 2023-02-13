@@ -8,8 +8,6 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<maven.compiler.source>1.8</maven.compiler.source>
-		<maven.compiler.target>1.8</maven.compiler.target>
 		<selenium.java.version>4.8.0</selenium.java.version>
 		<testng.version>7.4.0</testng.version>
 		<assertj.core.version>3.24.2</assertj.core.version>
@@ -26,26 +24,27 @@
 		<maven.compiler.version>3.8.1</maven.compiler.version>
 		<maven.surefire.version>3.0.0-M5</maven.surefire.version>
 		<jdk.release.version>11</jdk.release.version>
-		<!--<runmode>local</runmode>-->
+		<apache.commons.lang3.version>3.9</apache.commons.lang3.version>
+		<apache.commons.io.version>2.4</apache.commons.io.version>
 	</properties>
 
 	<build>
 		<plugins>
-			<!--<plugin>
+			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<version>${maven.compiler.version}</version>
+				<version>3.8.1</version>
 				<configuration>
-					<maven.compiler.source>${maven.compiler.source}</maven.compiler.source>
-					<maven.compiler.target>${maven.compiler.target}</maven.compiler.target>
+					<forceJavacCompilerUse>true</forceJavacCompilerUse>
+					<release>11</release>
 				</configuration>
-			</plugin>-->
+			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>${maven.surefire.version}</version>
 				<configuration>
-					<forkCount>0</forkCount>
+					<forkCount>1</forkCount>
 					<suiteXmlFiles>
 						<suiteXmlFile>testng.xml</suiteXmlFile>
 					</suiteXmlFiles>
@@ -124,12 +123,12 @@
 		<dependency>
 			<groupId>org.apache.commons</groupId>
 			<artifactId>commons-lang3</artifactId>
-			<version>3.9</version>
+			<version>${apache.commons.lang3.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.directory.studio</groupId>
 			<artifactId>org.apache.commons.io</artifactId>
-			<version>2.4</version>
+			<version>${apache.commons.io.version}</version>
 		</dependency>
 	</dependencies>
 </project>

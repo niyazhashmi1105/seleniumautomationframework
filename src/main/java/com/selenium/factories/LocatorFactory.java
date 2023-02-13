@@ -24,6 +24,7 @@ public final class LocatorFactory {
 			map.put(LocatorType.PARTIALLINKTEXT, By::partialLinkText);
 			map.put(LocatorType.CSSSELECTOR, By::cssSelector);
 			map.put(LocatorType.TAGNAME, By::tagName);
+			
 		}
 	
 	
@@ -32,5 +33,4 @@ public final class LocatorFactory {
 		return map.get(locator).apply(value);
 	}
 	
-
 }

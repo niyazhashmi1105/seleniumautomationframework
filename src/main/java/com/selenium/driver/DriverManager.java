@@ -4,7 +4,7 @@ import java.util.Objects;
 
 import org.openqa.selenium.WebDriver;
 
-public final class DriverManager {
+public class DriverManager {
 
 	private DriverManager() {
 
