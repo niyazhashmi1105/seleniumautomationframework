@@ -8,12 +8,12 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<selenium.java.version>4.8.0</selenium.java.version>
+		<selenium.java.version>4.0.0</selenium.java.version>
 		<testng.version>7.4.0</testng.version>
 		<assertj.core.version>3.24.2</assertj.core.version>
 		<joda.time.version>2.12.2</joda.time.version>
 		<assertj.joda.time.version>2.2.0</assertj.joda.time.version>
-		<extent.repport.version>5.0.9</extent.repport.version>
+		<extent.report.version>5.0.9</extent.report.version>
 		<apache.poi.ooxml.version>5.2.3</apache.poi.ooxml.version>
 		<apache.poi.version>5.2.3</apache.poi.version>
 		<apache.poi.ooxml.schemas.version>4.1.2</apache.poi.ooxml.schemas.version>
@@ -83,7 +83,7 @@
 		<dependency>
 			<groupId>com.aventstack</groupId>
 			<artifactId>extentreports</artifactId>
-			<version>${extent.repport.version}</version>
+			<version>${extent.report.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.poi</groupId>

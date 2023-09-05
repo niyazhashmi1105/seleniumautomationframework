@@ -10,7 +10,7 @@
     <classes>
       <class name="com.selenium.tests.AmazonHamburgerMenuPageTest">
         <methods>
-          <include name="amazonHamburgerMenuTest" invocation-numbers="0 1 2 3 4"/>
+          <include name="amazonHamburgerMenuTest"/>
           <include name="tearDown"/>
           <include name="setUp"/>
         </methods>
